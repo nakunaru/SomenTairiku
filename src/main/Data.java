@@ -1,55 +1,58 @@
-
 package main;
 
-import twitter4j.*;
-import twitter4j.http.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+import twitter4j.Twitter;
+import twitter4j.TwitterFactory;
+import twitter4j.auth.AccessToken;
+import twitter4j.auth.RequestToken;
 
 /**
- *
+ * singleton class.
  * @author yayugu
- * singleton class
  */
 final class Data {
-    private static final Data instance = new Data();
-    private Data(){};
-    public static Data getInstance(){
-        return Data.instance;
-    }
+	private static final Data instance = new Data();
 
-    public Twitter twitter;
-    public RequestToken requestToken;
-    public AccessToken accessToken = null;
-    public String consumerKey = "jzRAY2WOMGOzquTTxtvfQ";
-    public String consumerSecret = "DGlj0qwupf9KcqkbzUMnmbeo9HKpophBXJUT4rphk";
+	private Data() {
+	};
 
-    public void saveData(){
-        try{
-            BufferedWriter bw =
-                new BufferedWriter(
-                    new OutputStreamWriter(
-                        new FileOutputStream("data.dat"), "UTF-8"));
-            bw.write(accessToken.getToken() + "\r\n");
-            bw.write(accessToken.getTokenSecret() + "\r\n");
-            bw.close();
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-    }
+	public static Data getInstance() {
+		return Data.instance;
+	}
 
-    public void loadData() throws IOException {
-        BufferedReader br =
-            new BufferedReader(
-                new InputStreamReader(
-                    new FileInputStream("data.dat"),"UTF-8"));
-        String token = br.readLine();
-        String tokenSecret = br.readLine();
-        accessToken = new AccessToken(token, tokenSecret);
-        twitter = new TwitterFactory().getOAuthAuthorizedInstance(consumerKey, consumerSecret, accessToken);
-        br.close();
-    }
+	public Twitter twitter;
+	public RequestToken requestToken;
+	public AccessToken accessToken = null;
+	public String consumerKey = "tCE1HI1lUY0TiU7RnwKw";
+	public String consumerSecret = "kRABRqr00z7Qhv0sHsGaRw0pRhFUZRPLToNtJm8v8";
 
+	public void saveData() {
+		try {
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
+					new FileOutputStream("data.dat"), "UTF-8"));
+			bw.write(accessToken.getToken() + "\r\n");
+			bw.write(accessToken.getTokenSecret() + "\r\n");
+			bw.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
+	public void loadData() throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(
+				new FileInputStream("data.dat"), "UTF-8"));
+		String token = br.readLine();
+		String tokenSecret = br.readLine();
+		accessToken = new AccessToken(token, tokenSecret);
+		twitter = new TwitterFactory().getInstance(accessToken);
+		br.close();
+	}
 
 }
-
