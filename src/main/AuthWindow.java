@@ -37,7 +37,6 @@ public class AuthWindow extends javax.swing.JDialog {
      */
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-
         jLabel2 = new javax.swing.JLabel();
         pin = new javax.swing.JTextField();
         getOAuthAccessToken = new javax.swing.JButton();
