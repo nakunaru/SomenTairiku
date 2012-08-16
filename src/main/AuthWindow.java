@@ -45,7 +45,7 @@ public class AuthWindow extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel2.setText("コード:");
-
+        this.setTitle("認証");
         getOAuthAccessToken.setText("認証");
         getOAuthAccessToken.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
