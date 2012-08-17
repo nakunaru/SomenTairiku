@@ -3,7 +3,7 @@
 そう、薬味付きそーめん大陸ならね
 
 ■ダウンロード
-https://github.com/kaibadash/SomenTairiku/downloads
+https://github.com/nakunaru/SomenTairiku/downloads
 
 ■使い方：
 Ctrl + Enter で投稿
@@ -12,15 +12,14 @@ Ctrl + Enter で投稿
 ・転んでも泣かない
 
 @25Re さんの「ラーメン大陸」のパクリソフトである「そーめん大陸」を
-フォークして欲しい機能を追加した「薬味付きそーめん大陸」です。
-このソフトの一切の責任は @kaiba にあります。
-画像ファイルをドラッグ&ドロップすることで、ついっぷるフォトにアップロードできます。
-(複数ファイルも一括でアップロードできる。そう、薬味付きそーめん大陸ならね。)
-@kaiba はついっぷるを応援しています！
+@kaibadashがフォークして欲しい機能を追加した「薬味付きそーめん大陸」
+（https://github.com/kaibadash/SomenTairiku）
+をさらにフォークして、見た目を仕事してるっぽくしたものです。
+
 
 本家そーめん大陸はこちら。
 http://d.hatena.ne.jp/yayugu/20100516/1273972853
 https://github.com/yayugu/SomenTairiku
 
 --
-薬味付きそーめん大陸、そーめん大陸はGPLv3に基づき公開されています。
+ライセンス：GPLv3
