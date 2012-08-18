@@ -6,8 +6,7 @@
 （https://github.com/kaibadash/SomenTairiku）  
 をさらにフォークして、見た目を仕事してるっぽくしたものです。  
   
-![screenshot](https://github.com/nakunaru/SomenTairiku/blob/vim_like/screenshot.png?raw=true)  
-
+![screenshot](https://github.com/nakunaru/SomenTairiku/blob/master/screenshot.png?raw=true)  
   
 本家そーめん大陸はこちら。  
 http://d.hatena.ne.jp/yayugu/20100516/1273972853  
