@@ -26,7 +26,7 @@ public class AuthWindow extends javax.swing.JDialog {
     /** Creates new form AuthWindow */
     public AuthWindow() {
         initComponents();
-        ImageIcon imageIcon = new ImageIcon(getClass().getResource("/main/resources/icon16.png"));
+        ImageIcon imageIcon = new ImageIcon(getClass().getResource("/main/resources/vim_16.png"));
         this.setIconImage(imageIcon.getImage());
     }
 
