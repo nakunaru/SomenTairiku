@@ -3,7 +3,7 @@
 ## これは何？
 @25Re さんの「ラーメン大陸」のパクリソフトである「そーめん大陸」を  
 @kaibadashがフォークして欲しい機能を追加した「薬味付きそーめん大陸」  
-（https://github.com/kaibadash/SomenTairiku）  
+（ [https://github.com/kaibadash/SomenTairiku](https://github.com/kaibadash/SomenTairiku) ）  
 をさらにフォークして、見た目を仕事してるっぽくしたものです。  
   
 ![screenshot](https://github.com/nakunaru/SomenTairiku/blob/master/screenshot.png?raw=true)  
